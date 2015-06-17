@@ -1,0 +1,43 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> Simple Calculator</title>
+	<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+	<link href='style.css' rel='stylesheet' type='text/css'>
+	<!--font-family: 'Montserrat', sans-serif;-->
+	<!--font-family: 'Arvo', serif;-->
+	<!--font-family: 'Roboto Condensed', sans-serif;;-->
+</head>
+<body>
+	<div class="center">
+		<h1>Simple Calculator</h1>
+		<form name="calculator">
+			<input type="button" id="clear" class="special" value="C"/>
+			<input type="text" id="display" class="display" />
+			<br />
+			<input type="button" id="7" class="number" value="7" onclick="get(this.value)"/>
+			<input type="button" id="8" class="number" value="8" onclick="get(this.value)"/>
+			<input type="button" id="9" class="number" value="9" onclick="get(this.value)"/>
+			<input type="button" id="+" class="operation" value="+" onclick="get(this.value)"/>
+			<br />
+			<input type="button" id="4" class="number" value="4" onclick="get(this.value)"/>
+			<input type="button" id="5" class="number" value="5" onclick="get(this.value)"/>
+			<input type="button" id="6" class="number" value="6" onclick="get(this.value)"/>
+			<input type="button" id="-" class="operation" value="-" onclick="get(this.value)"/>
+			<br />
+			<input type="button" id="1" class="number" value="1" onclick="get(this.value)"/>
+			<input type="button" id="2" class="number" value="2" onclick="get(this.value)"/>
+			<input type="button" id="3" class="number" value="3" onclick="get(this.value)"/>
+			<input type="button" id="*" class="operation" value="*" onclick="get(this.value)"/>
+			<br />
+			<input type="button" id="0" class="number" value="0" onclick="get(this.value)"/>
+			<input type="button" id="." class="operation" value="." onclick="get(this.value)"/>
+			<input type="button" id="/" class="operation" value="/" onclick="get(this.value)"/>
+			<input type="button" id="=" class="special" value="=" onclick="calculates()"/>
+		</form>
+	</div>
+</body>
+<script src="script.js"></script>
+</html>
